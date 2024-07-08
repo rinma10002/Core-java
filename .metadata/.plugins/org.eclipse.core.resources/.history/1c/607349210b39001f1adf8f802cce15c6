@@ -1,0 +1,6 @@
+public class HelloWorld{
+	public static void main(Strings [] args){
+		String msg = "Hello World";
+		System.out.printf("msg = %s|n , msg);
+	}
+}

@@ -1,0 +1,34 @@
+
+public class LoopDemo {
+	public static void main(String[] args) {
+		//A부터 Z까지 출력하기
+//		for(int i = 65; i<=90 ; i++) {
+//			if(i%5==0) {
+//				if(i==65) {
+//					System.out.printf("%c\t",(char)i);
+//				}else {
+//					System.out.printf("%c\n",(char)i);}
+//			}else {
+//				System.out.printf("%c\t",(char)i);
+//			}
+			//System.out.printf("%c\t",(char)i);
+			//System.out.printf("%c\n",(char)i);
+		//}
+//		int count =0;
+//		for(int i=1 ; i<=100 ; i++) {
+//			if(i%4==0) {
+//				count = count +1;
+//			}
+//		}
+//		System.out.print(count);
+		
+		System.out.print("연도를 입력하시오");
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		int year = sc.nextInt();
+		if((year%4==0 && year%100!=0)||year%400==0) {
+			System.out.print(year+"년은 윤년입니다");
+		}else {
+			System.out.print(year+"년은 윤년이 아닙니다");
+		}
+	}
+}

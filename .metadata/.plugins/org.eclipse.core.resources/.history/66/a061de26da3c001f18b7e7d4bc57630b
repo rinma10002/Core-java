@@ -1,0 +1,28 @@
+
+public class SungjukMgmt {
+	public static void main(String[] args) {
+		Student chul = new Student();
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		System.out.print("학번: ");
+		chul.hakbun= sc.nextLine();
+		System.out.print("국어: ");
+		chul.kor= sc.nextInt();
+		System.out.print("영어: ");
+		chul.eng= sc.nextInt();
+		System.out.print("수학: ");
+		chul.math= sc.nextInt();
+		chul.tot = chul.kor+chul.math+chul.eng;
+		chul.avr = chul.tot/(double)3;
+		
+		chul.grade ='\u0000';
+		switch((int)(chul.avr/10)) {
+			case10: case9: chul.grade = 'a'; break;
+			case8: chul.grade = 'b'; break;
+			case7: chul.grade = 'c'; break;
+			case6: chul.grade = 'd'; break;
+			default: chul.grade = 'f';
+		}
+		
+	}
+
+}

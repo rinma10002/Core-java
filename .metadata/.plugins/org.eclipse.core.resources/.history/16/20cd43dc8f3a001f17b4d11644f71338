@@ -1,0 +1,14 @@
+
+public class ConditionDemo {
+	public static void main(String[] args) {
+		System.out.print("Favorite Season(spring, summer, fall, winter) : ");
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		String season = sc.nextLine();
+		if(season.equals("spring")) {
+			System.out.println("봄");
+		}else if(season.equals("summer")) {
+			System.out.println("dufma");
+		}
+	}
+
+}

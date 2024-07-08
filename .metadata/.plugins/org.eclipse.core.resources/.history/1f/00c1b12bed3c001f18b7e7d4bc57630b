@@ -1,0 +1,10 @@
+
+public class Array {
+	public static void main(String[] args) {
+		int[] age;
+		age = 28 ;
+		String name = "한지민";
+		
+	}
+
+}
